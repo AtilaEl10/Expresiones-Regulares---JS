@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Formulario de validación">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Formulario de Hora - CESFAM Andes</title>
+        <!--GoogleFont Roboto-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <!--Estilos CSS-->
+        <link rel="stylesheet" href="style.css">        
+    </head>
+    <body>
+        <div class="formulario">
+            <h1>CESFAM Andes</h1>
+            <h2>Reserva de horas médicas</h2>
+            <form class="contenido">   
+                <input class="datos" type="text" id="rut" placeholder="RUT">
+                <input class="datos" type="text" id="name" placeholder="Nombre">
+                <input class="datos" type="text" id="apellido" placeholder="Apellidos">
+                <input class="datos" type="number" id="edad" placeholder="Edad">
+                <input class="datos" type="email" id="mail" placeholder="Correo">
+                <label class="titulos" for="especialidad">Ingresa la especialidad que deseas</label>
+                <select class="datos" id="especialidad" placeholder="Especialidad">
+                    <option value="value1">Consulta General</option>
+                    <option value="value2">Dental</option>
+                    <option value="value3">Oftalmología</option>
+                    <option value="value4">Pediatria</option>
+                </select>
+                <label class="titulos" for="date">¿Que día harás tu reserva?</label>
+                <input class="datos" type="text" id="date" placeholder="dd-mm-aaaa" min="2021-03-03">
+                <label class="titulos" for="hora">¿A que hora harás tu reserva?</label>
+                <select class="datos" id="hora" placeholder="Hora" required>
+                    <option value="value1">9:30</option>
+                    <option value="value2">10:30</option>
+                    <option value="value3">11:30</option>
+                    <option value="value4">12:30</option>
+                </select>                
+                <input class="boton" type="submit"  id="submit" value="Reservar">            
+            </form>
+        </div>
+        <!--Mi script de Javascript-->
+        <script src="script.js"></script>
+    </body>
+</html>
